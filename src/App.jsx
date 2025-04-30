@@ -5,14 +5,16 @@ import { Movies } from "./pages/Movies";
 import { Contact } from "./pages/Contact";
 import AppLayout from "./components/Layout/AppLayout";
 import './App.css'
+import { ErrorPage } from "./pages/Error";
 
 
 const App = () => {
   const router = createBrowserRouter([
     {
-      path:"/",
-      element:<AppLayout/>,
-      children:[
+      path: "/",
+      element: <AppLayout />,
+      errorElement: <ErrorPage />,
+      children: [
         {
           path: "/",
           element: <Home />
@@ -29,9 +31,10 @@ const App = () => {
           path: "/contact",
           element: <Contact />
         },
+
       ]
     },
-    
+
   ])
 
   // const router = createBrowserRouter(
