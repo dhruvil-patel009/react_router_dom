@@ -361,7 +361,7 @@
   }
   
   .movie__img {
-    width: 100%;
+    /* width: 100%; */
     display: block;
   }
   
@@ -392,10 +392,21 @@
     margin-bottom: 20px;
   }
   
+  .movie_actor{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
   .heading__primary {
     font-size: 16px;
     margin-right: auto;
     color: royalblue;
+  }
+
+  .actor_heading{
+    font-size: 14px;
+    margin-right: auto;
+    color: #24badd;
   }
   
   .fa-fire {
