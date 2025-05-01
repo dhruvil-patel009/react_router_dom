@@ -6,6 +6,7 @@ import { Contact } from "./pages/Contact";
 import AppLayout from "./components/Layout/AppLayout";
 import './App.css'
 import { ErrorPage } from "./pages/Error";
+import { getMoviesData } from "./api/GetAPIData";
 
 
 const App = () => {
@@ -25,7 +26,8 @@ const App = () => {
         },
         {
           path: "/movie",
-          element: <Movies />
+          element: <Movies />,
+          loader: getMoviesData,
         },
         {
           path: "/contact",
